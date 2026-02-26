@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00c853, #0091ea);
+  min-height: 100vh;
+  color: white;
+}
+
+.bird-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.bird-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease;
+}
+
+.bird-card:hover {
+  transform: scale(1.05);
+}
+
+.bird-card img {
+  width: 100%;
+  border-radius: 10px;
+}
