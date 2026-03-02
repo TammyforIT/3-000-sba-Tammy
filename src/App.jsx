@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getBirds } from "./Api.js";
+import { getBirds } from "./Api.jsx";
 import BirdList from "./birdlist.jsx";
 
 export default function App() {
