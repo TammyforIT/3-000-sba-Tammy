@@ -1,0 +1,25 @@
+{
+  "hash": "861bfb89",
+  "configHash": "fc694a9a",
+  "lockfileHash": "3cf9bf49",
+  "browserHash": "1238125a",
+  "optimized": {
+    "react": {
+      "src": "../../../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "3a58f5ab",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c5031123",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-SLIEIKO6": {
+      "file": "chunk-SLIEIKO6.js"
+    }
+  }
+}

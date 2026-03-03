@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getBirds } from "./Api.jsx";
-import BirdList from "./birdlist.jsx";
+import Birdlist from "./Birdlist.jsx";
 
 export default function App() {
   const [birds, setBirds] = useState([]);
@@ -14,7 +14,7 @@ export default function App() {
       <h1 style={{ textAlign: "center", marginTop: "20px" }}>
         Aves Explorer
       </h1>
-      <BirdList birds={birds} />
+      <Birdlist birds={birds} />
     </>
   );
 }

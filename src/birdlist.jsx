@@ -1,6 +1,6 @@
-import BirdCard from "./birdcard.jsx";
+import BirdCard from "./Birdcard.jsx";
 
-export default function BirdList({ birds }) {
+export default function Birdlist({ birds }) {
   return (
     <div className="bird-grid">
       {birds.map((b) => (
