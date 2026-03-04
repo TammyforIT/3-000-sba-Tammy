@@ -1,10 +1,10 @@
-import BirdCard from "./BirdCard";
+import Birdcard from "./Birdcard";
 
-export default function BirdList({ birds, onSelect }) {
+export default function Birdlist({ birds, onSelect }) {
   return (
     <div className="bird-grid">
       {birds.map(bird => (
-        <BirdCard
+        <Birdcard
           key={bird.uid}
           bird={bird}
           onSelect={() => onSelect(bird)}
