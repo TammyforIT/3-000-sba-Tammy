@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import BirdList from "./BirdList";
-import BirdDetails from "./BirdDetails";
+import BirdDetails from "./Birddetails";
 
 export default function App() {
   const [birds, setBirds] = useState([]);
