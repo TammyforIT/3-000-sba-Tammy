@@ -1,11 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-CD the src and backend to make it run.
-Right click on server.js then open on intergated terminal.
-For front end-> cd ~/Downloads/3-000-sba-Tammy
+App.jsx fetches data from a web API. The data is saved in state using useState. useEffect runs the API call when the page loads, and when the state changes or the component re-renders you can see it log in the console. When the state updates, the screen updates automatically. This keeps the app in sync with the API. For the front end, run it with npm run dev.
