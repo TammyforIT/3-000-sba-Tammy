@@ -1,20 +1,24 @@
-import { useEffect, useState } from "react";
-import { getBirds } from "./Api.jsx";
-import Birdlist from "./Birdlist.jsx";
+import { useState, useEffect } from "react";
+import BirdList from "./BirdList";
+import BirdDetails from "./BirdDetails";
 
 export default function App() {
   const [birds, setBirds] = useState([]);
+  const [selectedBird, setSelectedBird] = useState(null);
 
   useEffect(() => {
-    getBirds().then(setBirds);
+    fetch("https://aves.ninjas.cl/api/birds")
+      .then(res => res.json())
+      .then(data => setBirds(data));
   }, []);
 
   return (
-    <>
-      <h1 style={{ textAlign: "center", marginTop: "20px" }}>
-        Aves Explorer
-      </h1>
-      <Birdlist birds={birds} />
-    </>
+    <div className="app">
+      {selectedBird ? (
+        <BirdDetails bird={selectedBird} onBack={() => setSelectedBird(null)} />
+      ) : (
+        <BirdList birds={birds} onSelect={setSelectedBird} />
+      )}
+    </div>
   );
 }
